@@ -1,0 +1,197 @@
+/*Modificar cores*/
+.add-button {
+  background-color: #ff8200;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff8200;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ff8200;
+  color: white;
+}
+
+footer {
+  background-color: #ff8200;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.pizza {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+
+
+
+/* Estilos para o carrinho */
+#carrinho {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#carrinho h2 {
+  margin-top: 0;
+}
+
+#carrinho-list {
+  list-style: none;
+  padding: 0;
+}
+
+#carrinho-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#total {
+  font-weight: bold;
+}
+
+#finalizar-pedido {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Estilos para o logotipo */
+.footer-logo img {
+  max-width: 100px;
+}
+
+/* Estilos para as informações de contato */
+.footer-contact p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Estilos para os ícones de redes sociais */
+.footer-social {
+  margin-top: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Estilos adicionais */
+a {
+  text-decoration: none;
+  color: white;
+}
+/*pushing a hamburger menu into a pillow texture like background*/
+
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 13%;
+  color: #090909;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 0.5em;
+  background: #171717;
+  border: 1px solid #171717;
+  transition: all .3s;
+  box-shadow: inset 4px 4px 12px #3a3a3a,
+             inset -4px -4px 12px #000000;
+}
+
+.menuButton:hover {
+  border: 1px solid black;
+}
+
+.menuButton:active {
+  color: #666;
+  box-shadow: 6px 6px 12px #3a3a3a,
+             -6px -6px 12px #000000;
+}
+
+input[type = "checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
+}
+
+.menuButton span {
+  width: 30px;
+  height: 4px;
+  background: rgb(200,200,200);
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+
+input[type]:checked ~ span.top {
+  transform: translateY(290%)rotate(45deg);
+  width: 40px;
+}
+
+input[type]:checked ~ span.bot {
+  transform: translateY(-270%) rotate(-45deg);
+  width: 40px;
+  box-shadow: 0 0 10px #495057;
+}
+
+input[type]:checked ~ span.mid {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+.titulo-menu img{
+  max-width: 100px;
+}

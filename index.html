@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <title>Menu de Pizzas</title>
+</head>
+
+<body>
+
+    <header class="d-flex justify-content-center">
+        <div class="titulo-menu">
+            <img src="./logo humbugueria.png" alt="" srcset="">
+        </div>
+        
+
+            <div class="carrinho">
+                <button id="carrinho-button" type="button" class="btn" style="color: aliceblue;" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Carrinho (<span id="carrinho-count">0</span>)
+                </button>
+            </div>
+
+        
+
+
+    </header>
+    <div>
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section id="menu" class=" d-flex justify-content-center">
+
+        <div class="titulo-categoria">
+            <h2 style="text-align: center;">Xis</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://www.360meridianos.com/wp-content/uploads/2018/01/xis-gaucho.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Xis Salada</h5>
+                        <p class="card-text">Pão, Humbuguer, Alface, Tomate, Queijo, Maionese. </p>
+                        <p class="price"><strong>R$ 18,00</strong></p>
+                        <button class="add-button" data-name="Xis Salada" data-price="18.00">Adicionar ao
+                            Carrinho</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://www.360meridianos.com/wp-content/uploads/2018/01/xis-gaucho.jpg"
+                        class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Xis Carne</h5>
+                            <p class="card-text">Pão, Carne Bovina, Alface, Tomate, Queijo, Maionese. </p>
+                            <p class="price"><strong>R$ 18,00</strong></p>
+                            <button class="add-button" data-name="Xis Carne" data-price="18.00">Adicionar ao
+                                Carrinho</button>
+    
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://www.360meridianos.com/wp-content/uploads/2018/01/xis-gaucho.jpg"
+                        class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Xis Coração</h5>
+                            <p class="card-text">Pão, Coração, Alface, Tomate, Queijo, Maionese. </p>
+                            <p class="price"><strong>R$ 18,00</strong></p>
+                            <button class="add-button" data-name="Xis Coração" data-price="18.00">Adicionar ao
+                                Carrinho</button>
+    
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://www.360meridianos.com/wp-content/uploads/2018/01/xis-gaucho.jpg"
+                        class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Xis Bacon</h5>
+                            <p class="card-text">Pão, Bacon, Alface, Tomate, Queijo, Maionese. </p>
+                            <p class="price"><strong>R$ 18,00</strong></p>
+                            <button class="add-button" data-name="Xis Bacon" data-price="18.00">Adicionar ao
+                                Carrinho</button>
+    
+                        </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Outras pizzas aqui -->
+    </section>
+
+    <section id="menu" class=" d-flex justify-content-center">
+
+        <div class="titulo-categoria">
+            <h2 style="text-align: center;">Bebidas</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://i5.walmartimages.com/asr/718749b7-5046-4abe-80ae-12bdc9dd4a77_1.cdfffc5d72a26b604ec5b36acfe443e4.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Coca-cola 2L</h5>
+                        <p class="price"><strong>R$ 8,00</strong></p>
+                        <button class="add-button" data-name="Coca-cola 2L" data-price="8.00">Adicionar ao
+                            Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/R.375d8527abd60d6ba30e322615c62ba3?rik=BkiLVo4AzS0vcQ&pid=ImgRaw&r=0"
+                        class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Coca-cola 500ml</h5>
+                            <p class="price"><strong>R$ 4,00</strong></p>
+                            <button class="add-button" data-name="Coca-cola 500ml" data-price="4.00">Adicionar ao
+                                Carrinho</button>
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/R.709651497762a08ba31e0b90b5e21dcb?rik=3g9TIuz9cxx%2bTw&pid=ImgRaw&r=0"
+                        class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fanta 2L</h5>
+                            <p class="price"><strong>R$ 7,00</strong></p>
+                            <button class="add-button" data-name="Fanta 2L" data-price="7.00">Adicionar ao
+                                Carrinho</button>
+                        </div>
+                </div>
+            </div>
+           
+
+        </div>
+        <!-- Outras pizzas aqui -->
+    </section>
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Carrinho</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Carrinho</h2>
+                    <ul id="carrinho-list">
+                        <!-- Itens do carrinho serão adicionados aqui -->
+                    </ul>
+                    <p id="total">Total: R$ 0,00</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar comprando</button>
+                    <button type="button" id="finalizar-pedido" class="btn btn-primary">Finalizar Pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-logo">
+            <img src="https://th.bing.com/th/id/R.7ed0ecccfc3cbbb5205fde14bc92fb73?rik=3xVUW8F8jp2TAQ&pid=ImgRaw&r=0"
+                alt="Logo da Empresa">
+        </div>
+        <div class="footer-contact">
+            <p>Número de Telefone: (123) 456-7890</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" class="social-icon"><img
+                    src="https://www.mhpcolorado.org/wp-content/uploads/2021/02/TS-FB-Icon.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img
+                    src="https://pluspng.com/img-png/twitter-logo-vector-png-twitter-logo-vector-by-oguzhanbahardesign-1043.png"
+                    alt="Twitter"></a>
+            <a href="#" class="social-icon"><img
+                    src="https://imperial-lashes-brows.com/wp-content/uploads/2021/01/imperial-lashes-brows-instagram-600x600.png"
+                    alt="Instagram"></a>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
